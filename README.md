@@ -37,9 +37,29 @@ Aplicación web construida con [Streamlit](https://streamlit.io/) para clasifica
 - pip
 - Git
 
+🛠 Tecnologías usadas:
+
+- Python 🐍
+- Streamlit 🌐
+- pandas 📊
+- pdfplumber 📄
+- openpyxl 📤
+
+Estrcutura del Proyecto:
+gastos-clasificador/
+│
+├── app_gastos_v3.py           # Script principal
+├── requirements.txt           # Dependencias
+├── README.md                  # Este archivo
+
+▶️ Ejecución (desde Terminal)
+streamlit run app_gastos_v3.py
+
+
 ### 📦 Instalación
 
 ```bash
 git clone https://github.com/leoperagalo/gastos-clasificador.git
 cd gastos-clasificador
 pip install -r requirements.txt
+
