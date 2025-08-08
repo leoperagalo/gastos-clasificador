@@ -22,12 +22,16 @@ def clasificar_gasto(descripcion):
         return "Amazon"
     elif "uber eats" in desc:
         return "Uber Eats"
-    elif "spotify" in desc:
-        return "Entretenimiento"
+    elif any(keyword in desc for keyword in ["spotify", "netflix", "hbo", "prime video"]):
+        return "Suscripciones Stream"
+    elif any(keyword in desc for keyword in ["bp orquidea", "pemex", "gasolineras"]):
+        return "Gasolineras"
     elif "oxxo" in desc or "7-eleven" in desc:
         return "Conveniencia"
     elif "restaurante" in desc or "toks" in desc:
-        return "Comida"
+        return "Restaurantes"
+    elif any(keyword in desc for keyword in ["barraca valenciana", "valenciana"]):
+        return "Barraca Valenciana"
     else:
         return "Otros"
 
