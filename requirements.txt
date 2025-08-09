@@ -4,3 +4,7 @@ pdfplumber
 matplotlib
 openpyxl
 xlsxwriter
+
+git add requirements.txt
+git commit -m "Añade requirements para despliegue"
+git push
