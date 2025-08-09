@@ -131,9 +131,11 @@ def guess_category(descripcion: str):
         return "Amazon"
     elif "uber eats" in desc:
         return "Uber Eats"
+    elif "nespresso" in desc:
+        return "Nespresso"
     elif any(keyword in desc for keyword in ["spotify", "netflix", "hbo", "prime video", "mubi", "f1", "youtubepremium"]):
-        return "Suscripciones Stream"
-    elif any(keyword in desc for keyword in ["chatgpt", "chat-gpt", "tactiq.io", "gmail", "msft subscription", "microsoft", "icloud", "apple.com"]):
+        return "Streaming"
+    elif any(keyword in desc for keyword in ["chatgpt", "chat-gpt", "membership", "one https://help.ub", "google*gsuite purpleste cc", "tactiq.io", "gmail", "msft subscription", "microsoft", "icloud", "apple.com", "cloud", "uber one"]):
         return "Suscripciones Tools"
     elif any(keyword in desc for keyword in ["bp orquidea", "pemex", "gasolina", "g500", "shell", "bp", "hidrosina", "oxxo gas", "super serv echecaray"]):
         return "Gasolina"
@@ -143,35 +145,43 @@ def guess_category(descripcion: str):
         return "Seguros"
     elif "melate" in desc or "tulotero" in desc:
         return "Melate"
-    elif "moda" in desc or "sfera satelite" in desc:
+    elif any(keyword in desc for keyword in ["scappino", "sfera"]):
         return "Moda"
     elif any(keyword in desc for keyword in ["intereses efi *", "efectivo inmediato 36"]):
         return "Deuda TDC"
-    elif any(keyword in desc for keyword in ["toks", "rest macaroni satelite", "islaa", "maison kayser", "restaurante", "rest", "yoyocafe", "matisse", "launica"]):
+    elif any(keyword in desc for keyword in ["etsy", "mixup", "discos la roma", "rappi", "mercado libre mexico"]):
+        return "Shopping"
+    elif any(keyword in desc for keyword in ["toks", "barracruda", "rest macaroni satelite", "islaa", "maison kayser", "restaurante", "rest", "yoyocafe", "matisse", "launica"]):
         return "Restaurantes"
     elif any(keyword in desc for keyword in ["cinepolis", "cinemex", "dulceria"]):
         return "Cines"
-    elif any(keyword in desc for keyword in ["wal-mart", "wal mart", "la comer", "soriana", "chedraui", "wm express", "cornershop"]):
+    elif any(keyword in desc for keyword in ["wal-mart", "superama", "wal mart", "la comer", "soriana", "chedraui", "wm express", "walmart", "cornershop"]):
         return "Supermercado"
-    elif any(keyword in desc for keyword in ["liverpool", "sears"]):
+    elif any(keyword in desc for keyword in ["liverpool", "sears", "el palacio de hierro sa naucalpan", "liv satelite 0004"]):
         return "Tiendas Departamentales"
+    elif any(keyword in desc for keyword in ["starbucks", "cielito querido", "ABTS 15111"]):
+        return "Cafeterias"
     elif any(keyword in desc for keyword in ["wsj", "the new york times"]):
         return "News"
+    elif any(keyword in desc for keyword in ["bmw", "mini", "cooper"]):
+        return "Auto"
     elif any(keyword in desc for keyword in ["barraca", "valenciana", "el palacio hierro sate", "el palacio hierro", "palaciodehierro"]):
         return "Palacio de Hierro"
     elif any(keyword in desc for keyword in ["home depot", "the home depot", "sodimac"]):
         return "Hogar y Ferretería"
     elif any(keyword in desc for keyword in ["aeromexico", "trip", "vivaaerobus", "volaris", "interjet", "aerolinea", "hotel", "hyatt", "marriott", "airbnb", "expedia", "booking"]):
         return "Viajes"
+    elif any(keyword in desc for keyword in ["arena cdmx", "ticketmaster", "ticket", "boletia", "boletos", "evento", "concierto", "teatro", "seatgeek"]):
+        return "Espectáculos"
     elif any(keyword in desc for keyword in ["gandhi", "porrua", "libreria", "lumen", "office depot", "office max"]):
         return "Libros y Papelería"
-    elif any(keyword in desc for keyword in ["farmacia", "farmacias", "f del ahorro", "farm guad", "san pablo", "benavides"]):
+    elif any(keyword in desc for keyword in ["farmacia", "farmacias", "f del ahorro", "farm guad", "san pablo", "benavides", "f ahorro"]):
         return "Farmacias"
-    elif any(keyword in desc for keyword in ["pase", "capufe", "tag", "aeropuerto", "estacionamiento", "parquimetro", "parco"]):
-        return "Transporte y Peajes"
+    elif any(keyword in desc for keyword in ["pase", "capufe", "tag", "aeropuerto", "estacionamiento", "parquimetro", "centro banamex servicio mexico", "parco"]):
+        return "Estacionamiento y Peajes"
     elif any(keyword in desc for keyword in ["c.f.e.", "cfe", "sacmex", "tesoreria", "gdf sria"]):
         return "Gobierno"
-    elif any(keyword in desc for keyword in ["naturgy", "telmex", "izzi", "totalplay", "AT&T", "ATT", "Telcel"]):
+    elif any(keyword in desc for keyword in ["naturgy", "comision federal de ele", "telmex", "izzi", "totalplay", "AT&T", "ATT", "Telcel", "cargo recurrente att"]):
         return "Servicios"
     elif any(keyword in desc for keyword in ["pago", "pago recibido", "abono", "deposito", "transferencia", "reembolso", "devolucion"]):
         return "Pagos y Abonos"
