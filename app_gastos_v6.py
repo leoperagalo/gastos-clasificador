@@ -11,7 +11,7 @@ st.set_page_config(page_title="Clasificador de Gastos V6", layout="centered")
 st.title("📊 Clasificador de Gastos por Mes y Categoría --- V6")
 st.write("Sube **uno o más** estados de cuenta en PDF (BBVA, AMEX). Unimos todo, detectamos año, generamos Mes (YYYY-MM), y agrupamos por **Categoría** y **Mes**.")
 st.warning("**ACTUALIZACIÓN:** Ahora los resúmenes y gráficos ocultan automáticamente la categoría 'Pagos y Abonos' y otras que no son gastos directos.")
-st.warning("️️⚠️ **Advertencia de Privacidad:** Esta es una herramienta pública. No subas documentos con información sensible si no te sientes cómodo. Los archivos se procesan en un servidor externo y se eliminan después de cada sesión.")
+st.warning("️️⚠️ **Advertencia de Privacidad:** No subas documentos con información sensible si no te sientes cómodo. Te recomiendo anonimizar NOMBRES y NUMERO DE CUENTA con un editor de PDF antes de usar la herramienta. Los archivos se procesan en un servidor externo y se eliminan después de cada sesión.")
 
 uploaded_files = st.file_uploader(
     "Carga uno o más estados de cuenta bancarios (PDF), tanto de BBVA Como de AMEX",
