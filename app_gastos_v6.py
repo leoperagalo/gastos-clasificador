@@ -135,7 +135,7 @@ def guess_category(descripcion: str):
         return "Nespresso"
     elif any(keyword in desc for keyword in ["spotify", "netflix", "hbo", "prime video", "mubi", "f1", "youtubepremium"]):
         return "Streaming"
-    elif any(keyword in desc for keyword in ["chatgpt", "chat-gpt", "membership", "one https://help.ub", "google*gsuite purpleste cc", "tactiq.io", "gmail", "msft subscription", "microsoft", "icloud", "apple.com", "cloud", "uber one"]):
+    elif any(keyword in desc for keyword in ["chatgpt", "chat-gpt", "membership", "one https://help.ub", "google*google", "google*gsuite purpleste cc", "tactiq.io", "gmail", "msft subscription", "microsoft", "icloud", "apple.com", "cloud", "uber one"]):
         return "Suscripciones Tools"
     elif any(keyword in desc for keyword in ["bp orquidea", "pemex", "gasolina", "g500", "shell", "bp", "hidrosina", "oxxo gas", "super serv echecaray"]):
         return "Gasolina"
@@ -159,7 +159,7 @@ def guess_category(descripcion: str):
         return "Supermercado"
     elif any(keyword in desc for keyword in ["liverpool", "sears", "el palacio de hierro sa naucalpan", "liv satelite 0004"]):
         return "Tiendas Departamentales"
-    elif any(keyword in desc for keyword in ["starbucks", "cielito querido", "ABTS 15111"]):
+    elif any(keyword in desc for keyword in ["starbucks", "cielito querido", "abts 15111"]):
         return "Cafeterias"
     elif any(keyword in desc for keyword in ["wsj", "the new york times"]):
         return "News"
